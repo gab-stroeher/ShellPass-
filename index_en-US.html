@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+		<meta name="author" content="Gabriel Stroeher"></meta>
+		<meta property="og:locale" content="en_US"></meta>
+		<meta property="og:type" content="website"></meta>
+		<meta property="og:title" content="ShellPass - Password Generator!"></meta>
+		<meta property="og:description" content="ShellPass - Random Password Generator!"></meta>
+		<meta property="og:url" content="https://instagram.com/gabstroeher/"></meta>
+		<meta property="og:site_name" content="Instagram"></meta>
+        <link rel="stylesheet" type="text/css" href="styles/reset.css"></link>
+        <link rel="stylesheet" type="text/css" href="styles/index.css"></link>
+        <link rel="shortcut icon" type="image/png" href="images/favicon_io/favicon-32x32.png"></link>
+        <title>[en_US] - ShellPass!</title>
+		<script>
+			src="https://kit.fontawesome.com/f223593715.js"
+			crossorigin="anonymous"
+		</script>
+    </head>
+    <body>
+        <header>
+            <h1>passwordGenerator<span class="arr">🔐</span>ShellPass<span class="white">:</span><span class="til">~</span><span class="white">$</span> <span class="transition">&#9608;</span></h1>
+        </header>
+		<p align="center">
+			Change language:
+		</p>
+		<p align="center">
+			<img src="images/us.png" height="48" width="48"></img>&nbsp;<a href="index_pt-BR.html"><img src="images/brazil.png" height="32" width="32"></img></a><br>
+		</p><br>
+        <main>
+            <label for="QtdSen">*️⃣ - Enter the number of passwords to be generated:</label><br>
+            <input type="number" class="numBox" id="QtdSen" value="5" placeholder="5"></input><br></br>
+            <label for="QtdCar">#️⃣ - Enter the number of characters that will be in each generated password:</label><br>
+            <input type="number" class="numBox" id="QtdCar" value="16" placeholder="16"></input><br></br>
+			<p class="green"><span class="til">~</span><span class="white">$</span><span class="white">: </span>What do you want to include in your password(s)?</p>
+			<p class="white"><span class="til">~</span><span class="white">#</span><span class="white">: </span>Check, or uncheck, the option(s) as you wish to confirm!</p>
+			<p class="til"><span class="til">~</span><span class="white">!</span><span class="white">: </span>RECOMMENDED: Check all options.</p><br>
+            <span>[</span><input type="checkbox" class="cb" id="maiusc" checked><span class="espacoDir">]</span>
+            <label for="maiusc">🔠 - UPPERCASE (A, B, C,...)?</label><br>
+            <span>[</span><input type="checkbox" class="cb" id="minusc" checked><span class="espacoDir">]</span>
+            <label for="minusc">🔡 - lowercase (a, b, c,...)?</label><br>
+            <span>[</span><input type="checkbox" class="cb" id="num" checked><span class="espacoDir">]</span>
+            <label for="num">🔢 - Numbers (1, 2, 3,...)?</label><br>
+            <span>[</span><input type="checkbox" class="cb" id="carEsp" checked><span class="espacoDir">]</span>
+            <label for="carEsp">🔣 - Special characters (!, @, #, $, %,...)?</label>
+            <div class="center">
+				<input type="button" id="gerSen" class="button" value="🔑 - Generate password(s)!"></input>
+            </div>
+			<p class="green"><span class="til">~</span><span class="white">$</span><span class="white">: </span>See, below, the generated password(s):</p>
+            <div class="center">
+            	<textarea id="senhaGerada" placeholder="The generated password(s) will appear here!" disabled readonly></textarea>
+            </div>
+            <script src="scripts/script.js"></script>
+        </main>
+        <footer>
+		    <p>
+                <span class="green">passwordGenerator<span class="arr">🔐</span>ShellPass<span class="white">:</span><span class="til">~</span><span class="white">$</span> <span class="white">sudo give -me --a coffee</span></span>
+            </p><br>
+            <p>
+				Copyright &copy; 2022-<script>document.write(new Date().getFullYear());</script>, made by Gabriel Stroeher (@gabStroeher):
+			</p>
+            <p>
+                <a href="https://linkedin.com/in/gabstroeher/" target="_blank"><img src="images/linkedin.png" height="32" width="32"></img></a>
+                <a href="https://instagram.com/gabstroeher/" target="_blank"><img src="images/instagram.png" height="32" width="32"></img></a>
+                <a href="https://twitter.com/gabstroeher/" target="_blank"><img src="images/twitter.png" height="32" width="32"></img></a>
+            </p>
+			<p class="til">
+				v19.11.22 - made with ❤ in <img src="images/brazil2.png" height="32" width="32"></img>!
+			</p>
+        </footer>
+    </body>
+</html>
